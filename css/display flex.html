@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Display Flex</title>
+        <style>
+            .card{
+                border:3px solid black;
+                width:300px;
+                padding:10px;
+                margin:20px;
+
+            }
+            .card-header{
+                background-color: black;
+                text-align: center;
+                color: white;
+                padding:10px;
+                margin-top: -9px;
+            }
+            .card-body{
+                text-align: center;
+            }
+            button{
+                background-color:teal;
+                margin-left:25px;
+            
+            }
+            .card-deck{
+                display:flex;
+                border:3px solid aqua;
+                width:1000px
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-header">
+                    <h2>Casual Shoes</h2>
+                </div>
+                <div class="card-body">
+                    <img src="../assets/Shoes.jpeg">
+                    <p>&#8377;7500/-</p>
+                </div>
+            
+                <div class="card-footer">
+                    <button type="button">Add To Cart</button>
+                    <button type="button">Buy Now</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h2>T Shirt</h2>
+                </div>
+                <div class="card-body">
+                    <img src="../assets/T shirt.jpeg">
+                    <p>&#8377;2000/-</p>
+                </div>
+    
+                <div class="card-footer">
+                    <button type="button">Add To Cart</button>
+                    <button type="button">Buy Now</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h2>Boat Headsets</h2>
+                </div>
+                <div class="card-body">
+                    <img src="../assets/Boat.jpeg">
+                    <p>&#8377;10,000/-</p>
+                </div>
+                <div class="card-footer">
+                    <button type="button">Add To Cart</button>
+                    <button type="button">Buy Now</button>
+                </div>
+            
+            </div>
+                
+            </div>
+        </div>
+    </body>
+</html>
