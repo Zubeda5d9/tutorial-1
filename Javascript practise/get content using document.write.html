@@ -1,0 +1,16 @@
+<!DOCTYPE Html>
+<html>
+    <head>
+        <title>Get data using document.write</title>
+        <script>
+            function getcontent(){
+                var res=document.getElementById("heading1").innerHTML;
+                document.write(res)
+            }
+        </script>
+    </head>
+    <body>
+        <h1 id="heading1">Riyaz Ahmed</h1>
+        <button type="button" onclick="getcontent()">Get</button>
+    </body>
+</html>

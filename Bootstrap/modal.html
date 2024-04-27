@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>modal</title>
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+        <script src="../node_modules/jquery/dist/jquery.js"></script>
+    </head>
+    <body class="container mt-4">
+        <button type="button"data-bs-toggle="modal"data-bs-target="#Mymodal" class="btn btn-outline-info" >Modal View</button>
+        <div class="modal" id=Mymodal >
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="text-primary">Log-In</h1>
+                        <button type="button" class=btn-close data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <label> Enter Email or Mobile No:</label>
+                        <input type="text">
+                        <label>Enter Password:</label>
+                        <input type="password">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button">Login</button>
+                        <button type="button" data-bs-dismiss="modal">close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+</html>
+
+
+
+
+
+

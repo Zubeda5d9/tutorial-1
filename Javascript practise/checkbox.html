@@ -1,0 +1,28 @@
+<!DOCTYPE Html>
+<html>
+    <head>
+        <title>Checkbox validation</title>
+        <script>
+            function selectSkills(){
+                var skills=document.getElementsByClassName("skills")
+                var len=skills.length;
+                var res=document.getElementById("res");
+                for(i=0;i<len;i++){
+                    if(skills[i].checked){
+                        res.innerHTML+=skills[i].value+",";
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <label>Select your Skills: </label>
+        <input type="checkbox" value="Html" class="skills">Html
+        <input type="checkbox" value="Css" class="skills">Css
+        <input type="checkbox" value="Bootstrap" class="skills">BootStrap
+        <input type="checkbox" value="Javascript" class="skills">Javascript
+        <input type="checkbox" value="ReactJs" class="skills">ReactJs
+        <button type="button" onclick="selectSkills()">Submit</button>
+        <h1 id="res"></h1>
+    </body>
+</html>

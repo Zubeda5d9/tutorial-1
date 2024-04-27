@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>dropdown validation</title>
+        <script>
+            function selectCity(){
+                var city=document.getElementById("city").value;
+                
+                var res=document.getElementById("res");
+                
+                if(city=="Choose Your City"){
+                    res.innerHTML="please select your city";
+                }else{
+                    res.innerHTML=city;
+                }
+            }
+            
+        </script>
+    </head>
+    <body>
+        <label>Select your city</label>
+        <select onchange="selectCity()" id="city">
+            <option>Choose Your City</option>
+            <option>Guntur</option>
+            <option>Vijayawada</option>
+            <option>Tenali</option>
+            <option>Kurnool</option>
+            <option>chitoor</option>
+        </select>
+        <h1 id="res"></h1>
+    </body>
+</html>

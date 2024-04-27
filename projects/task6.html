@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Css Styles in JavaScript</title>
+        <script>
+            function color(){
+                document.getElementById("res").style.color="red";
+            }
+            function backgroundColor(){
+                document.getElementById("res").style.backgroundColor="teal";
+            }
+            function textAlign(){
+                document.getElementById("res").style.textAlign="center";
+            }
+            function all(){
+                document.getElementById("res").setAttribute("style","color:aqua;background-color:fuchsia;text-align:center");
+            }
+        </script>
+    </head>
+    <body>
+        <h1 id="res">Shaik Zubeda Tabassum</h1>
+        <button type="button" onclick="color()">Color</button>
+        <button type="button" onclick="backgroundColor()">Background color</button>
+        <button type="button" onclick="textAlign()">Text align</button>
+        <button type="button" onclick="all()">All</button>
+    </body>
+</html>

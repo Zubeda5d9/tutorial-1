@@ -1,0 +1,136 @@
+<!-- how to get and set data  -->
+<!-- Get data using alert -->
+<!DOCTYPE Html>
+<html>
+    <head>
+        <title>get data</title>
+        <script>
+            function getContent(){
+                var msg=document.getElementById("data").innerHTML;
+                alert(msg)
+            }
+        </script>
+    </head>
+    <body>
+        <h1 id="data">Shaik Zubeda Tabassum</h1>
+        <button type="button" onclick="getContent()">Get</button>
+    </body>
+</html>
+
+
+
+<!--using innerHTML-->
+<!DOCTYPE Html>
+<html>
+    <head>
+        <title>Get data using innerHtml</title>
+        <script>
+            function GETCONTENT(){
+                var res=document.getElementById("heading1").innerHTML
+                document.getElementById("res").innerHTML
+            }
+        </script>
+    </head>
+    <body>
+        <h1 id="heading1">Zubed Tabassum</h1>
+        <button type="button" onclick="GETCONTENT()">Get</button>
+    </body>
+</html>
+
+
+<!--using document.write()-->
+<!DOCTYPE Html>
+<html>
+    <head>
+        <title>Get data using document.write</title>
+        <script>
+            function getcontent(){
+                var res=document.getElementById("heading1").innerHTML;
+                document.write(res)
+            }
+        </script>
+    </head>
+    <body>
+        <h1 id="heading1">Riyaz Ahmed</h1>
+        <button type="button" onclick="getcontent()">Get</button>
+    </body>
+</html>
+
+
+
+<!--set data for text-->
+<!DOCTYPE Html>
+<html>
+    <head>
+        <title>set data</title>
+        <script>
+            function getContent(){
+                var msg=document.getElementById("heading").innerHTML;
+                document.getElementById("msg").innerHTML=msg
+            }
+            function setContent(){
+                var msg=document.getElementById("heading").innerHTML=Hyderabad;
+            }
+        </script>
+    </head>
+    <body>
+        <h1 id="heading">Vijayawada</h1>
+        <button type="button" onclick="getContent()">GET</button>
+        <button type="button" onclick="setContent()">SET</button>
+        <div id="msg"></div>
+    </body>
+</html>
+
+
+<!--set data through textbox-->
+<!DOCTYPE Html>
+<html>
+    <head>
+        <title>Set data through textbox</title>
+        <script>
+            function getContent(){
+                var heading=document.getElementById("heading").value;
+                document.getElementById("res").innerHTML=heading;
+            }
+            function setContent(){
+                document.getElementById("heading").value="Hyderabad";
+            }
+        </script>
+    </head>
+    <body>
+        <input type="text" id="heading">
+        <button type="button" onclick="getContent()">Get</button>
+        <button type="button" onclick="setContent()">Set</button>
+        <div id="res"></div>
+    </body>
+</html>
+
+
+
+<!--set content using form-->
+<!-- <!DOCTYPE Html>
+<html>
+    <head>
+        <title>Set form data</title>
+        <script>
+            function submitData(){
+                var txtName=document.getElementById("txtName").value;
+                var txtEmail=document.getElementById("txtEmail").value;
+                var txtMobile=document.getElementById("txtMobile").value;
+                var res=document.getElementById("res").innerHTML="Name  is: "+txtName+"<br>"+"Email is: "+txtEmail+"<br>"+"Mobile Number is: "+txtMobile
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            <label>Enter Your Name: </label>
+            <input type="text" id="txtName"><br><br>
+            <label>Enter Your email: </label>
+            <input type="email" id="txtEmail"><br><br>
+            <label>Enter Your MobileNumber: </label>
+            <input type="tel" id="txtMobile"><br><br>
+            <button type="button" onsubmit="submitData()">Submit</button>
+            <h1 id="res"></h1>
+        </form>
+    </body>
+</html> -->

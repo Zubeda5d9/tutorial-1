@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Get data using innerHtml</title>
+    <script>
+      function GETCONTENT() {
+        var res = document.getElementById("heading1").innerHTML;
+        document.getElementById("res").innerHTML=res;
+      }
+    </script>
+  </head>
+  <body>
+    <h1 id="heading1">Zubed Tabassum</h1>
+    <button type="button" onclick="GETCONTENT()">Get</button>
+    <div id="res"></div>
+  </body>
+</html>

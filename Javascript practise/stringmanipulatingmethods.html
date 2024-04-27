@@ -1,0 +1,130 @@
+<!-- match() method: this method is used to verify the string and compare with regular expression -->
+<!-- <!DOCTYPE Html>
+<html>
+    <head>
+        <title>Match method</title>
+        <script>
+            function verifyName(){
+                var name=document.getElementById("msg").value;
+                var res=document.getElementById("res");
+                var regExp=/^[A-Za-z]+$/;
+                if(name==""){
+                    res.innerHTML="please enter your name".fontcolor("red");
+                }else{
+                    if(name.match(regExp)){
+                        res.innerHTML=`Your name is: ${name} is valid name`.fontcolor("green")
+                    }else{
+                        res.innerHTML=`Your name is invalid`.fontcolor("maroon")
+                    }
+                }
+
+            }
+        </script>
+    </head>
+    <body>
+        <label>Enter your Name</label>
+        <input type="text" id="msg">
+        <button type="button" onclick="verifyName()">Submit</button>
+        <h1 id="res"></h1>
+    </body>
+</html> -->
+
+
+<!--Start with-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Startwith() method</title>
+    <!-- <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css"> -->
+    <script>
+      function verifyCardnumber() {
+        var cardnumber = document.getElementById("res").value;
+        var pic = document.getElementById("pic");
+        //simple decision
+        if (cardnumber.startsWith("1234")) {
+          pic.src = "../assets/mastercard.png";
+        } else {
+          if (cardnumber.startsWith("1222")) {
+            pic.src = "../assets/rupay.png";
+          } else {
+            pic.src = "../assets/visa.png";
+          }
+        }
+      }
+    </script>
+  </head>
+  <body>
+    
+    <div >
+        <label >Enter your cardnumber: </label>
+        <input type="text" id="res" onkeyup="verifyCardnumber()" />
+    
+        <span >
+            <img width="100" height="40" id="pic" />
+        </span>
+    </div>
+  </body>
+</html>
+
+
+
+<!--endswith-->
+<!DOCTYPE Html>
+<html>
+    <head>
+        <title>Ends with()</title>
+        <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+        <script>
+            function verifywebsite(){
+                var website=document.getElementById("msg").value;
+                var icon=document.getElementById("icon");
+                if(website.endsWith(".com")){
+                    icon.className="bi bi-patch-check"
+                }else{
+                    icon.className="bi bi-x-circle"
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <input type="text" id="msg" onkeyup="verifywebsite()">
+        <span id="icon"></span>
+    </body>
+</html>
+
+
+<!--charat-->
+<!-- <!DOCTYPE Html>
+<html>
+    <head>
+        <title>Char At</title>
+    </head>
+    <body>
+        <script>
+            function f1(){
+                var name="Shaik Zubeda Tabassum"
+                var char=name.charAt(0)
+                document.write(`${char}`)
+            }f1()
+        </script>
+    </body>
+</html> -->
+
+
+
+<!--char codeAt()-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Char codeAt</title>
+    </head>
+    <body>
+        <script>
+            function f1(){
+                var name="Shaik Zubeda Tabassum"
+                var char=name.charCodeAt(3)
+                document.write(`${char}`)
+            }f1()
+        </script>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Radio button validation</title>
+    <script>
+        function verifyGender(){
+            var gender=document.getElementsByClassName("gender");
+            var len=gender.length;
+            var res=document.getElementById("res")
+            for(i=0;i<len;i++){
+                if(gender[i].checked){
+                    res.innerHTML=gender[i].value;
+                }
+            }
+        }
+    </script>
+  </head>
+  <body>
+    <label>Select your gender: </label>
+    <input type="radio" name="gender" class="gender" value="Male"/>Male
+    <input type="radio" name="gender" class="gender" value="FeMale"/>FeMale
+    <input type="radio" name="gender" class="gender" value="Others"/>Others
+    <button type="button" onclick="verifyGender()">Submit</button>
+    <h1 id="res"></h1>
+  </body>
+</html>

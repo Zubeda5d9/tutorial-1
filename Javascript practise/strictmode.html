@@ -1,0 +1,66 @@
+<!-- what is strict mode?
+   Developers working on same projects from different locations may follow various shorcuts to develop their programme this leads to code inconsistancy 
+   so we use strict mode using keyword called use strict  -->
+
+
+
+<!-- program without using strict keyword -->
+<!DOCTYPE Html>
+<html>
+    <head>
+        <title>Without using strict keyword</title>
+        <script>
+            function f1(){
+                x=10;
+                document.write(x);
+            }
+            f1()
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
+
+<!-- program with using strict mode -->
+<!DOCTYPE Html>
+<html>
+    <head>
+        <title>Using strict mode</title>
+        <script>
+            "use strict";
+            function f1(){
+                
+                x=100;
+                document.write(x);
+            }
+            f1()
+        </script>
+    </head>
+</html>
+
+
+
+<!--  to target script  towards legacy browsers 
+    -legacy browsers(it is the older version browsers they supports html-4 and es4)
+    syntax: -->
+       <!--code-->
+    <!-- -modern browsers(it is a advanced version browsers they support html5 and es5+) -->
+
+    <!DOCTYPE Html>
+    <html>
+        <head>
+            <title>Using strict mode</title>
+            <script>
+                <!--
+                    "use strict";
+                    function f1(){
+                    
+                    x=100;
+                    document.write(x);
+                }
+                f1()
+                -->
+            </script>
+        </head>
+    </html>

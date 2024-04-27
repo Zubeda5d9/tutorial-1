@@ -1,0 +1,94 @@
+<!-- primitive datatypes
+   number(int,double)
+   string
+   boolean
+   null 
+non-primitive datatypes
+    array 
+    object 
+    date  -->
+
+
+
+
+<!-- string datatype -->
+<!DOCTYPE Html>
+<html>
+    <head>
+        <title>String datatype</title>
+        <script>
+            function f1(){
+                var name="Shaik Zubeda Tabassum";
+                document.write(name);
+            }
+            f1()
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
+
+
+<!--type of operator-->
+<!-- <!DOCTYPE Html>
+<html>
+    <head>
+        <title>Type of operator</title>
+        <script>
+            function f1(){
+                var name="shaik Zubeda Tabassum";
+                document.write(typeof name);
+            }
+            f1()
+        </script>
+    </head>
+</html> -->
+
+
+<!-- property: length -->
+<!DOCTYPE Html>
+<html>
+    <head>
+        <title>Length</title>
+        <script>
+            function f1(){
+                var name="Shaik Zubeda Tabassum";
+                var len=name.length
+                document.write(len)
+            }
+            f1()
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
+
+
+<!DOCTYPE Html>
+<html>
+    <head>
+        <title>Length</title>
+        <script>
+            function submitData(){
+                var password=document.getElementById("data").value;
+                var len=password.length;
+                if(len>8){
+                    document.write(`You entered password ${password}, contains ${len} chars, please lengthen your password`)
+                }else{
+                    document.write("Password succesfully submitted");
+                }
+
+            }
+                
+        </script>
+    </head>
+    <body>
+        <label>Enter your password</label>
+        <input type="password" id="data"><br><br>
+        <button type="button" onclick="submitData()">Submit</button>
+    </body>
+</html>
+
+
+

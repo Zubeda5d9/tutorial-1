@@ -1,0 +1,109 @@
+<!-- array are used to reduce complexity
+array can store any type of values 
+array is represented in the curly braces  -->
+
+
+
+<!-- <!DOCTYPE Html>
+<html>
+    <head>
+        <title>Array</title>
+        <script>
+            function f1(){
+                var marks=[10,"zubeda",true,9.23]
+                document.write(marks[1])
+                
+            }f1()
+
+        </script>
+    </head>
+</html> -->
+
+<!--also data-->
+<!-- <!DOCTYPE Html>
+<html>
+    <head>
+        <title>Array</title>
+        <script>
+            function f1(){
+                var marks=[10,"zubeda",true,9.23]
+                marks["24"]="new value"
+                document.write(marks["24"])
+                
+            }f1()
+
+        </script>
+    </head>
+</html> -->
+
+
+<!-- array elements
+array can handle any type of elements
+    primitive or non primitive
+    also handle function -->
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Array elements</title>
+    </head>
+    <body>
+    <script>
+        function f1() {
+        var product = ["samsung m34", 15000, "256gb", true];
+        document.write(`
+            Product name is: ${product["0"]}<br>
+            product price is: ${product["1"]}<br>
+            product feature is: ${product["2"]}<br>
+            product instock: ${product["3"]}`);
+          }f1()
+        </script>
+      </body>
+    </html> -->
+    
+<!-- ECMA 5 introduces destructing array -->
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Array elements</title>
+    </head>
+    <body>
+    <script>
+        function f1() {
+            var product = ["samsung m34", 15000, "256gb", true];
+            var [Name,price,features,instock]=product
+            document.write(`
+            Name:${Name}
+            price:${price}
+            features:${features}
+            Stock:${instock}`);
+          }f1()
+        </script>
+      </body>
+    </html> -->
+
+
+
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title>array</title>
+        </head>
+        <body>
+            <script>
+                function f1(){
+                    var product = [
+                        "JBL Speaker",4500.55,true,["Hyderabad","Vijayawada"],
+                        function(){
+                            document.write("Welcome to Javascript Arrays");
+                        }
+                    ];
+    
+                    var len = product.length;
+                    document.write(`Length is : ${len}`);
+                    
+                }
+                f1()
+            </script>
+        </body>
+    </html>
+    

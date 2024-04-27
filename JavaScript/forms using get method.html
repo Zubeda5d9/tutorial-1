@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Data</title>
+        <script>
+           function submitClick(){
+                var txtName = document.getElementById("txtName").value;
+                var txtEmail = document.getElementById("txtEmail").value;
+                var txtPassword = document.getElementById("txtPassword").value;
+
+                document.getElementById("res").innerHTML = "User Name is : "+txtName +"<br>" + "User Email is : " + txtEmail +"<br>" + "User Password is : "+txtPassword;
+           }
+        </script>
+    </head>
+    <body>
+        <form>
+            <label>Enter Your Name : </label>
+            <input type="text" id="txtName"/><br><br>
+            <label>Enter Your Email : </label>
+            <input type="email" id="txtEmail"/><br><br>
+            <label>Enter Your Password : </label>
+            <input type="password" id="txtPassword"/><br><br>
+            <button type="button" onclick="submitClick()">Submit</button>
+        </form>
+        <h1 id="res"></h1>
+    </body>
+</html>

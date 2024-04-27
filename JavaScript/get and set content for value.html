@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Get and Set content for value</title>
+        <script>
+            function getContent(){
+                var name=document.getElementById("txtData").value;
+                document.getElementById("res").innerHTML=data;
+            }
+            function setContent(){
+                document.getElementById("txtData").value="LTE TECH SOFT";
+            }
+        </script>
+    </head>
+    <body>
+        <input type="text"id="txtData"><br><br>
+        <button type="button" onclick="getContent()">Get</button>
+        <button type="button" onclick="setContent()">Set</button>
+        <div id="res"></div>
+        
+    </body>
+</html>

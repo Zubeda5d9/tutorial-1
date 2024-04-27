@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Get and Set Content for innerHTML</title>
+        <script>
+            function getContent(){
+                var data=document.getElementById(heading1).innerHTML;
+                document.getElementById("html").innerHTML=data;
+            }
+            function setContent(){
+                document.getElementById("heading1").innerHTML="LTE TECH SOFT";
+            }
+        </script>
+    </head>
+    <body>
+        <h1 id="heading1">Get and set content for innerhtml</h1>
+        <button type="button" onclick="getContent()">Get</button>
+        <button type="button" onclick="setContent()">Set</button>
+        <div id="html"></div>
+    </body>
+</html>

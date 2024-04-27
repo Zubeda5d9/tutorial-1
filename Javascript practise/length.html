@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Length</title>
+    <script>
+      function submitData() {
+        var password = document.getElementById("data").value;
+        var len = password.length;
+        if (len < 8) {
+          document.write(
+            `You entered password ${password}, contains ${len} chars, please lengthen your password`
+          );
+        } else {
+          document.write("Password succesfully submitted");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <label>Enter your password</label>
+    <input type="password" id="data" /><br /><br />
+    <button type="button" onclick="submitData()">Submit</button>
+  </body>
+</html>

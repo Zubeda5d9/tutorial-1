@@ -1,0 +1,60 @@
+<!DOCTYPE Html>
+<html>
+    <head>
+        <title>Classname Reference</title>
+        <script>
+            function addCss(){
+                var element=document.getElementsByClassName("heading")
+                // var len=element.length;
+                // for(var i=0;i<len;i++){                method one
+                //     element[i].style.color = "red";
+                // }
+
+                for(value of element){              //method two
+                    value.style.color="pink"
+                }
+                
+            }
+        </script>
+    </head>
+    <body>
+        <h1 class="heading">Shaik Zubeda Tabassum</h1>
+        <h1 class="heading">Shaik Zubeda Tabassum</h1>
+        <h1 class="heading">Shaik Zubeda Tabassum</h1>
+        <h1 class="heading">Shaik Zubeda Tabassum</h1>
+        <button type="button" onclick="addCss()">Css</button>
+
+    </body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Radio button validation</title>
+        <script>
+            function selectGender(){
+                var gender=document.getElementsByClassName("gender")
+                var len=gender.length
+                for(i=0;i<len;i++){
+                    if(gender[i].checked){
+                        res.innerHtml=gender[i].value
+                    }
+                }
+
+            }
+        </script>
+    </head>
+    <body>
+        <label>Select your gender: </label>
+        <input type="radio" name="gender" value="Male" class="gender">Male
+        <input type="radio" name="gender" value="FeMale" class="gender">FeMale
+        <input type="radio" name="gender" value="Others" class="gender">Others
+        <button type="button" onclick="selectGender()">Submit</button>
+        <h1 id="res"></h1>
+    </body>
+</html>
+

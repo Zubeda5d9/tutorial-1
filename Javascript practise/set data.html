@@ -1,0 +1,30 @@
+<!DOCTYPE Html>
+<html>
+    <head>
+        <title>Set form data</title>
+        <script>
+            function submitData(){
+                var txtName=document.getElementById("txtName").value;
+                var txtEmail=document.getElementById("txtEmail").value;
+                var txtMobile=document.getElementById("txtMobile").value;
+                document.getElementById("msg").innerHTML="Name  is: "+txtName+"<br>"+"Email is: "+txtEmail+"<br>"+"Mobile Number is: "+txtMobile
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            <label>Enter Your Name: </label>
+            <input type="text" id="txtName"><br><br>
+            <label>Enter Your email: </label>
+            <input type="email" id="txtEmail"><br><br>
+            <label>Enter Your MobileNumber: </label>
+            <input type="tel" id="txtMobile"><br><br>
+            <button type="button" onclick="submitData()">Submit</button>
+            
+        </form>
+        <h1 id="msg"></h1>
+    </body>
+</html>
+
+
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Arithmetic operations</title>
+    <script>
+        function Add() {
+            var num1 = document.getElementById("value1").value;
+            var num2 = document.getElementById("value2").value;
+            var add = (+num1) + (+num2);
+            document.getElementById("res").innerHTML = "Addition is: " + add;
+        }
+
+        function Subtract() {
+            var num1 = document.getElementById("value1").value;
+            var num2 = document.getElementById("value2").value;
+            var difference = num1 - num2;
+            document.getElementById("res").innerHTML = "Subtraction is: " + difference;
+        }
+
+        function Multiply() {
+            var num1 = document.getElementById("value1").value;
+            var num2 = document.getElementById("value2").value;
+            var multiply = num1 * num2;
+            document.getElementById("res").innerHTML = "Multiplication is: " + multiply;
+        }
+
+        function Division() {
+            var num1 = document.getElementById("value1").value;
+            var num2 = document.getElementById("value2").value;
+            var division = num1 / num2;
+            document.getElementById("res").innerHTML = "Division is: " + division;
+        }
+
+        function All() {
+            var num1 = document.getElementById("value1").value;
+            var num2 = document.getElementById("value2").value;
+            var sum = (+num1) + (+num2);
+            var difference = num1 - num2;
+            var multiply = num1 * num2;
+            var division = num1 / num2;
+            document.getElementById("res").innerHTML = "Addition is: " + sum + "<br>" +"Subtraction is: " + difference + "<br>" + "Multiplication is: " + multiply + "<br>" +"Division is: " + division;
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <input type="text" id="value1"><br><br>
+        <input type="text" id="value2"><br><br>
+        <button type="button" onclick="Add()">Add</button>
+        <button type="button" onclick="Subtract()">Subtract</button>
+        <button type="button" onclick="Multiply()">Multiply</button>
+        <button type="button" onclick="Division()">Division</button>
+        <button type="button" onclick="All()">All</button>
+    </form>
+    <h1 id="res"></h1>
+</body>
+</html>

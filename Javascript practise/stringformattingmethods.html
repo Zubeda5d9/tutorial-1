@@ -1,0 +1,36 @@
+<!-- string formatting methods
+big()
+small()
+bold()
+italic()
+sup()
+sub()
+strike()
+fontsize()
+fontcolor() -->
+
+
+<!DOCTYPE Html>
+<html>
+    <head>
+        <title>String formatting methods</title>
+        <script>
+            function verifyPassword(){
+                var password=document.getElementById("password").value;
+                var len=password.length;
+                var res=document.getElementById("res")
+                if(len<8){
+                    res.innerHTML=`you entered a password ${password} contains ${len} please lengthen your password`.fontcolor("maroon").bold();
+                }else{
+                    res.innerHTML="password entered successful".fontcolor("green").small()
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <label>enter your password</label>
+        <input type="password" id="password"><br><br>
+        <button type="button" onclick="verifyPassword()">Submit</button>
+        <h1 id="res"></h1>
+    </body>
+</html>

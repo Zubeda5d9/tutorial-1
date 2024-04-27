@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Form</title>
+        <!-- <style>
+            form{
+                max-width: 700px;
+                margin: 0 auto;
+                padding: 20px;
+                border: 5px solid black;
+                border-radius: 5px;
+                background-color: #f9f9f9;
+            }
+            input[type="button"]:hover{
+                background-color:#0056b3;
+            }
+            
+        </style> -->
+        
+        
+    </head>
+    <body>
+        <form enctype="multipart/form-data">
+            <label>Enter your name: </label>
+            <input type="text" required="required"><br><br>
+            <label>Enter Your Email: </label>
+            <input type="email"><br><br>
+            <label>Enter your Contact No: </label>
+            <input type="tel"><br><br>
+            <label>Create your password: </label>
+            <input type="password"><br><br>
+            <label>Select your date of birth: </label>
+            <input type="date"><br><br>
+            <label>Select Your City: </label>
+            <select>
+                <option>Choose Your city</option>
+                <option>Guntur</option>
+                <option>Vijayawada</option>
+                <option>Kadapa</option>
+                <option>Bangaluru</option>
+                <option>Hyderabad</option>
+            </select><br><br>
+            <label>Select your State: </label>
+            <select>
+                <option>Choose Your State</option>
+                <option>Andhra Pradesh</option>
+                <option>Telangana</option>
+                <option>Karnataka</option>
+                <option>Mumbai</option>
+                <option>Delhi</option>
+            </select><br><br>
+            <label>Select Your Gender: </label>
+            <input type="radio" name="gender" value="Male">Male
+            <input type="radio" name="gender" value="Fe-male">Fe-male
+            <input type="radio" name="gender" value="Others">Others
+            <br><br>
+            <label>Select your Skills: </label>
+            <input type="checkbox" value="Html">Html
+            <input type="checkbox" value="Css">Css
+            <input type="checkbox" value="Bootstrap">Bootstrap
+            <input type="checkbox" value="Javascript">Javascript
+            <input type="checkbox" value="ReactJs">ReactJs
+            <br><br>
+            <label>Upload a File : </label>
+            <input type="file" accept="pdf"><br><br>
+            <button type="button">Submit</button>
+        </form>
+    </body>
+</html>
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <style>
+        
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html> -->

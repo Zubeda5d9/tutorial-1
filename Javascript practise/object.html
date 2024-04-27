@@ -1,0 +1,67 @@
+<!-- in computer programming object is used to handle data and functionality -->
+
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>object type</title>
+        <style>
+           dt{
+              color : white; 
+              background-color:  teal;
+              padding : 10px
+           }
+           dd{
+             color : red; 
+             background-color: yellow;
+             padding : 5px;
+           }
+        </style>
+    </head>
+    <body>
+        <script>
+            function f1(){
+                var product = {
+                    Name : "Nike Casuals",
+                    Price : 2500.00,
+                    Quantity : 1,
+                    Stock : true,
+                    ShippedTo : ["Hyderabad","Vijayawada"],
+                    Total : function(){
+                        return this.Price * this.Quantity;
+                    },
+                    Print : function(){
+                        document.write(`
+                            <dl>
+                               <dt>Product Name</dt>
+                               <dd>${this.Name}</dd>
+                               <dt>Product Price</dt>
+                               <dd>${this.Price}</dd>
+                               <dt>Product Quantity</dt>
+                               <dd>${this.Quantity}</dd>  
+                               <dt>Product Stock</dt>
+                               <dd>${(this.Stock==true)?"In stock":"Out of Stock"}</dd>
+                               <dt>Product ShippedTo</dt>
+                               <dd>${this.ShippedTo.toString()}</dd>
+                               <dt>Product Total</dt>
+                               <dd>${this.Total()}</dd>
+                            </dl>
+                        `)
+                    }
+
+                }
+
+                // product.Name = "Nike Casuals";
+                // product.Price = 7500.99;
+                // product.Quantity = 5;
+                // product.Stock = false;
+                // product.ShippedTo = ["Hyderbad","Vijayawada"];
+
+                product.Print();
+            }
+            f1()
+        </script>
+    </body>
+</html>

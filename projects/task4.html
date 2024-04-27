@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login page</title>
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+        <script src="../node_modules/jquery/dist/jquery.js"></script>
+    </head>
+    <body class="container mt-4">
+        <ul class="nav nav-tabs">
+            <li class="nav-item  ">
+                <a href="#home" class="nav-link active" data-bs-toggle="tab">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#register" class="nav-link " data-bs-toggle="tab">Register</a>
+            </li>
+            <li class="nav-item">
+                <a href="#login" class="nav-link" data-bs-toggle="tab">Log-In</a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane  active mt-3" id="home">
+                <h1 class="text-danger bg-info">Welcome to LTE TECHSOFT</h1>
+                <h3>If you are already an user click on Log-In Here to continue....</h3>
+                <h3>If you are new to this page click on Register Here to proceed.....</h3>
+            </div>
+            <div class="tab-pane mt-3  " id="register">
+                <button type="button"data-bs-toggle="modal"data-bs-target="#Registration" class="btn btn-outline-primary" data-bs-backdrop="static">Register Here</button>
+                <div class="modal" id=Registration >
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="text-success ">Registration Form</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <label> Enter Name:</label>
+                                <input type="text"><br><br>
+                                <label>Enter Email:</label>
+                                <input type="email"><br><br>
+                                <label> Select gender:</label>
+                                <input type="radio" value="Male" name="gender">Male
+                                <input type="radio" value="Fe-male" name="gender">Fe-male
+                                <input type="radio" value="Others" name="gender">Others
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="text-danger bg-info">Register</button>
+                                <button type="button" data-bs-dismiss="modal" class="text-danger bg-info">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <div class="tab-pane mt-3" id="login">
+                <button type="button"data-bs-toggle="modal"data-bs-target="#Log-In" class="btn btn-outline-primary">Log-In Here</button>
+                <div class="modal" id="Log-In" >
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="text-success">Log-In Form</h1>
+                                <button type="button" class=btn-close data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <label> Enter Email or Mobile No:</label>
+                                <input type="text"><br><br>
+                                <label>Enter Password:</label>
+                                <input type="password">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="text-danger bg-info">Login</button>
+                                <button type="button" data-bs-dismiss="modal"  class="text-danger bg-info">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
